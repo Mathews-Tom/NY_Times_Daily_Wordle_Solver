@@ -211,5 +211,5 @@ driver.implicitly_wait(5)
 try:
     wordleSolver(possible_words)
 finally:
-    sleep(2)
+    sleep(5)
     driver.quit()
