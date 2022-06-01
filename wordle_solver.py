@@ -30,8 +30,6 @@ def split_word_evaluation(result, guess):
 def remove_incorrect_words(result, guess, possible_words):
     """Returns the list of words with incorrect possibilties removed"""
     absent, present, correct = split_word_evaluation(result, guess)
-    
-    print(absent, present, correct)
     good = []
     for ch in correct:
         good.append(ch[0])
