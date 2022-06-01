@@ -147,7 +147,7 @@ def enter_guess_get_result(guess):
               .find_elements(By.CSS_SELECTOR, "game-tile") #.find_element(By.CSS_SELECTOR, "game-title[letter='a']")
     evaluation = OrderedDict()
     for idx, (ch, element) in enumerate(zip(guess, row_elements)):
-        evaluation[f"{ch}_{idx}"] = element.get_attribute('evaluation')
+        evaluation[f"{ch}_{idx+1}"] = element.get_attribute('evaluation')
     return evaluation
 
 def convert_evaluation_dict_to_result(evaluation):
